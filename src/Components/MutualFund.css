@@ -1,0 +1,157 @@
+
+.mutual-fund-banner {
+  background-image: url('/Users/ramrajput/Documents/React Projects/kds-investment/public/images/mutual-fund-banner.png');
+  height: 50vh;
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+
+/* MutualFundPage.css */
+
+
+.mutual-fund-page {
+  max-width: 100%;
+  background-color: #dbe3e78d;
+  color: #000000;
+  padding-bottom: 20px;
+}
+
+.m-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.m-header h1 {
+  margin: 0;
+  color: rgb(9, 17, 68);
+
+}
+
+.intro {
+  width: 50%;
+  text-align: center;
+  margin: 30px 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border-left: 2px solid rgb(76, 73, 73);
+  border-top: 2px solid rgb(76, 73, 73);
+  border-right: 2px solid rgb(121, 145, 223);
+  border-bottom: 2px solid rgb(121, 145, 223);
+
+}
+
+.intro:hover {
+  zoom: 1.01;
+  border-left: 2px dashed rgb(121, 145, 223);
+  border-top: 2px dashed rgb(121, 145, 223);
+  border-right: 2px dashed rgb(76, 73, 73);
+  border-bottom: 2px dashed rgb(76, 73, 73);
+}
+
+.intro h2 {
+  color: #1e3a8a;
+}
+
+.intro ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro ul li {
+  margin: 10px 0;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #828a9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  background-color: #1e92af;
+}
+
+.offerings {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.offerings .fund-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.fund-card {
+  background-color: transparent;
+  border: 2px dashed white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 250px;
+  text-align: center;
+}
+
+.fund-icon {
+  font-size: 30px;
+  color: #2d556c;
+  margin-bottom: 10px;
+}
+
+.investment-types {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.investment-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.investment-card {
+  background-color: rgba(255, 255, 255, 0.403);
+  border: 1.5px solid gray;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  max-width: 300px;
+  text-align: center;
+}
+
+.investment-icon {
+  font-size: 30px;
+  color: #2d556c;
+  margin-bottom: 10px;
+}
+
+.calc-button {
+  padding: 10px 15px;
+  background-color: #828a9a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.calc-button:hover {
+  background-color: #22accb;
+}
+
+/* Add this to your existing CSS */
+.fund-card:hover{
+  
+  background-color: rgba(17, 230, 241, 0.078);
+  transition: all ease;
+
+  
+}
+

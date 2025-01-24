@@ -1,0 +1,313 @@
+.AboutBanner {
+
+  height: 60vh;
+  background-image: url("/Users/ramrajput/Documents/React Projects/kds-investment/public/images/aboutbanner1.jpg");
+  overflow: hidden;
+  background-size: 100% 100%;
+}
+
+
+.AboutContent {
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 40px 1.5fr;
+  padding: 20px;
+}
+
+.AboutImage {
+  width: 100%;
+  height: 90%;
+  object-fit: cover;
+  overflow: hidden;
+  text-align: center;
+  padding-right: 30px;
+  animation: headingslidefromright ease-in-out;
+  animation-direction: reverse;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+}
+
+.sepratorLine {
+  width: 5px;
+  background-color: aquamarine;
+}
+
+.AboutcontentText {
+  font-size: larger;
+  line-height: 30px;
+  animation: contenttextanim ease-in-out reverse;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+
+}
+
+@keyframes headingslidefromright {
+  0% {
+
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+  }
+
+
+  100% {
+    color: rgb(0, 0, 0);
+    opacity: 0;
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes contenttextanim {
+  0% {
+    color: rgb(0, 0, 0);
+  }
+
+  100% {
+    color: black;
+    transform: translateX(10%);
+    opacity: 0;
+  }
+
+}
+
+.aboutboxs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.aboutbox {
+  height: 200px;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 1px 5px 0px rgb(8, 211, 221), 0px -1px 5px 0px blue;
+
+  /* background-color: aquamarine; */
+}
+
+.aboutbox:nth-child(1) {
+  background-color: rgb(196, 235, 219);
+  /* transform: translateX(-100%); */
+  animation: boxslidefromleft ease-in-out;
+  animation-timeline: view();
+  animation-range: entry cover 20%;
+  opacity: 1;
+
+}
+
+.aboutbox:nth-child(2) {
+  background-color: rgb(169, 243, 212);
+  /* transform: translateX(-100%); */
+  animation: boxslidefromleft ease-in-out;
+  animation-timeline: view();
+  animation-range: entry cover 30%;
+  opacity: 1;
+
+}
+
+.aboutbox:nth-child(3) {
+  background-color: rgb(103, 248, 188);
+  /* transform: translateX(-100%); */
+  animation: boxslidefromleft ease-in-out;
+  animation-timeline: view();
+  animation-range: entry cover 35%;
+  opacity: 1;
+
+}
+
+.aboutbox:nth-child(4) {
+  background-color: rgb(76, 247, 176);
+  /* transform: translateX(-100%); */
+  animation: boxslidefromleft ease-in-out;
+  animation-timeline: view();
+  animation-range: entry cover 40%;
+  opacity: 1;
+
+}
+
+@keyframes boxslidefromleft {
+  from {
+    opacity: 0;
+    scale: 0.5;
+    transform: translateX(-1000%);
+    filter: blur(5px);
+  }
+
+  to {
+    scale: 1;
+    opacity: 1;
+    transform: translateX(0%);
+    transition: all 1s;
+    filter: blur(0px);
+  }
+
+}
+
+.about-w-o-c-s {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px 200px;
+}
+
+.about-customer-box {
+  background-color: white;
+  border: 1.4px dashed rgb(11, 191, 207);
+  border-radius: 5px;
+  padding: 20px;
+  line-height: 20px;
+  text-align: center;
+  animation: slidetextfrombottom ease-in-out;
+  animation-timeline: view();
+  animation-range: entry cover 30%;
+  transition: all .5s;
+}
+
+.about-customer-box:hover {
+  border: solid rgb(11, 191, 207);
+  transform: translateY(-10px);
+
+}
+
+@keyframes slidetextfrombottom {
+  from {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+}
+
+.researchesdiv {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  align-items: center;
+  background-color: whitesmoke;
+
+}
+
+.about-researches {
+  position: absolute;
+  width: 100%;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 33.33% 33.33% 33.33% 33.33% 33.33% 33.33% 33.33%;
+  gap: 10px;
+
+
+}
+
+.about-research {
+  border: 1.4px dashed;
+  width: 400;
+  border-radius: 5px;
+  justify-items: center;
+  padding: 20px;
+  line-height: 20px;
+}
+
+
+.about-researches {
+  animation: researchslider 15s ease-in-out infinite;
+  animation-timing-function: linear;
+}
+
+.about-researches:hover {
+  animation-play-state: paused;
+}
+
+.about-research:hover {
+  background-color: rgb(255, 255, 255);
+  scale: 1.03;
+}
+
+.about-research {
+  transition: all .5s;
+}
+
+@keyframes researchslider {
+  from {
+    transform: translateX(0%);
+  }
+
+  to {
+    transform: translateX(calc(-34%*4));
+  }
+}
+
+@media (max-width:768px) {
+  .AboutBanner {
+
+    height: 20vh;
+  }
+
+  .AboutContent {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .AboutImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    text-align: center;
+
+  }
+
+  .sepratorLine {
+    height: 5px;
+    width: 100%;
+    background-color: aquamarine;
+  }
+
+  .AboutcontentText {
+    font-size: large;
+    line-height: 30px;
+
+  }
+
+  .aboutboxs {
+    width: 100%;
+    grid-template-columns: 1fr;
+    /* padding-left: 50px; */
+  }
+
+  .aboutboxs {
+    grid-template-columns: 1fr;
+  }
+
+  .about-w-o-c-s {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+
+  .about-customer-box {
+    padding: 20px;
+  }
+
+  .about-researches {
+    width: 100%;
+    padding: 0;
+    grid-template-columns: 100% 100% 100% 100% 100% 100% 100%;
+  }
+
+  .about-research {
+
+    width: 100%;
+
+  }
+
+}

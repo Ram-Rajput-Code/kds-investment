@@ -1,0 +1,171 @@
+Navbar.css body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(0, 33, 131);
+
+  padding: 0.5rem 5rem;
+  /* color: rgb(8, 250, 0); */
+  position: sticky;
+  top: 0;
+  font-size: large;
+  z-index: 2;
+
+}
+
+
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  /* color: white; */
+  transition: color 0.3s;
+}
+
+
+.navbar-links a:hover {
+  color: #e79703;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+
+}
+
+.navbar-toggle .bar {
+  background-color: rgb(255, 255, 255);
+  height: 3px;
+  width: 25px;
+  margin: 3px 0;
+}
+
+ul li span {
+  font-size: small;
+}
+
+.drop-down-nav ul li {
+  padding-top: 10px;
+  display: block;
+}
+
+.drop-down-nav {
+  display: none;
+  position: absolute;
+  padding-top: 10px;
+  color: white;
+  background-color: rgb(0, 33, 131);
+  padding-bottom: 10px;
+  /* display: none; */
+  cursor: pointer;
+}
+
+ul li:hover .drop-down-nav {
+  display: block;
+}
+
+.drop-down-nav:hover {
+  display: block;
+}
+
+
+
+
+.drop-down-nav li {
+  list-style: none;
+}
+
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #333;
+    padding: 1rem;
+    border-radius: 8px;
+  }
+
+  .navbar-links.enable {
+    display: flex;
+    height: 330px;
+    padding: 10px 0px;
+    gap: 10px;
+    z-index: 9999999;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background-color: rgb(0, 33, 131);
+
+  }
+
+
+
+  .navbar-toggle {
+    display: flex;
+    right: 0;
+
+  }
+
+  .navbar-links a {
+    /* color: rgb(72, 255, 205); */
+    padding: 5px;
+
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: end;
+  }
+
+  .drop-down-nav {
+    display: none;
+    position: absolute;
+    padding-right: 10px;
+    right: 87%;
+    border-radius: 5px;
+    width: 230px;
+    margin-top: -15px;
+    color: rgb(72, 255, 205);
+    background-color: rgb(0, 33, 131);
+    padding-bottom: 10px;
+    /* display: none; */
+    cursor: pointer;
+  }
+
+
+}
+
+a {
+  color: aliceblue;
+}
+
+.active {
+  color: #e79703;
+  text-decoration: underline;
+  position: relative;
+}
+
+li .active {
+  text-decoration: underline;
+}

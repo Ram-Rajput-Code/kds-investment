@@ -1,0 +1,104 @@
+Container Styling
+.MuiContainer-root {
+    background-color: #f1ecec;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  /* Typography */
+  .MuiTypography-h4 {
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .MuiTypography-subtitle1 {
+    color: #666666;
+    margin-bottom: 20px;
+  }
+  
+  /* Card Styling */
+  .MuiCard-root {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+   
+  }
+  
+  .MuiCard-root:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .MuiCardMedia-root {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .MuiCardContent-root {
+    text-align: center;
+  }
+  
+  .MuiTypography-h5 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #444;
+  }
+  
+  .MuiTypography-body2 {
+    font-size: 1rem;
+    color: #777;
+  }
+  
+  /* List Styling */
+  .MuiList-root {
+    margin-top: 20px;
+  }
+  
+  .MuiListItem-root {
+    color: #555555;
+    font-size: 1rem;
+    padding: 10px 0;
+    border-bottom: 1px solid #eeeeee;
+  }
+  
+  .MuiListItem-root:last-child {
+    border-bottom: none;
+  }
+  .goi ul li{
+    list-style: none;
+    line-height: 1.8;
+    font-size: large;
+    color: #181717;
+  }
+ .goi-content ul li{
+  list-style: square;
+  line-height: 2.5;
+  font-size: larger;
+  color: #454444;
+ }
+ 
+ .goi-content ul hr{
+  height: 0.2px;
+ }
+ .thin-hr {
+  height: 1px;
+  background-color: #83808057;
+  border: none;
+}
+
+
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .MuiContainer-root {
+      padding: 15px;
+    }
+  
+    .MuiCard-root {
+      max-width: 100%;
+    }
+  }
+  
+
+  
