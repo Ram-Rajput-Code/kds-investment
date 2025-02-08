@@ -1,6 +1,6 @@
 .GoalBasedPlanninBanner {
   width: 100%;
-  background: url('/Users/ramrajput/Documents/React Projects/kds-investment/public/images/goal-banner.jpg');
+  background: url('/public/images/goal-banner.jpg');
   height: 90vh;
   background-size: 100% 100%;
 }

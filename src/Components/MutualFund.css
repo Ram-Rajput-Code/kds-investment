@@ -1,6 +1,6 @@
 
 .mutual-fund-banner {
-  background-image: url('/Users/ramrajput/Documents/React Projects/kds-investment/public/images/mutual-fund-banner.png');
+  background-image: url('/public/images/mutual-fund-banner.png');
   height: 50vh;
   overflow: hidden;
   background-size: 100% 100%;
