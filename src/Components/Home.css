@@ -215,7 +215,7 @@ p {
 
 @keyframes kdsslider {
   0% {
-    background-image: url("/Users/ramrajput/Documents/React Projects/kds-investment/public/images/kdsbodybanner1.jpg");
+    background-image: url("/public/images/kdsbodybanner1.jpg");
     color: rgb(0, 0, 0);
     text-shadow: 2px 2px 4px rgb(255, 255, 255);
 
@@ -223,7 +223,7 @@ p {
 
   100% {
     color: aliceblue;
-    background-image: url("/Users/ramrajput/Documents/React Projects/kds-investment/public/images/kdsbodybanner.jpg");
+    background-image: url("/public/images/kdsbodybanner.jpg");
     text-shadow: 2px 2px 4px rgb(23, 8, 187);
 
   }
